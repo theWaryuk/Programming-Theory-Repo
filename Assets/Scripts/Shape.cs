@@ -12,7 +12,7 @@ public class Shape : MonoBehaviour
     private float rotateSpeed = 25.0f;
 
     // ENCAPSULATION
-    public void SetName(string _name)
+    protected void SetName(string _name)
     {
         m_name = _name;
     }
@@ -43,7 +43,7 @@ public class Shape : MonoBehaviour
         Motion();
     }
 
-    public void OnMouseDown()
+    private void OnMouseDown()
     {
         DisplayText();
     }
